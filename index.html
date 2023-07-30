@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrative Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+  </head>
+  <body onload="init()">
+
+    <!-- Buttons for Selecting -->
+    <div class="buttons">
+        <button class="button" onclick="gasPrices()">
+            Gas Prices
+        </button>
+        <button class="button" onclick="barrelPrices()">
+            Crude Oil Prices
+        </button>
+        <button class="button" onclick="inflation()">
+            Inflation
+        </button>
+    </div>
+
+    <!-- Graph Title-->
+    <div>
+        <h1 id="title"></h1>
+    </div>
+
+    <!-- SVG Area -->
+    <div class="chart">
+        <svg
+            id="graph"
+            width="1400"
+            height="500">
+        </svg>
+    </div>
+
+    <!-- Tooltip that hovers when mouseover a scatter point-->
+    <div id="tooltip"></div> 
+    <div class="buttons" >
+        <button class="button" onclick="next()">
+            Next
+        </button>
+    </div>
+    <!-- Description of chart-->
+    <p id="description"></p>
+
+  <script src="index.js"></script>
+  </body>
+</html>
