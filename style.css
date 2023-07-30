@@ -1,5 +1,5 @@
 .buttons {
-    margin-left: 35%;
+    margin-left: 5%;
 }
 
 .button {
@@ -23,7 +23,11 @@
     display: inline-block;
 }
 
-#title{
+#title {
     justify-content: center;
     text-align: center;
+}
+
+#description {
+    margin: 20px 100px;
 }
